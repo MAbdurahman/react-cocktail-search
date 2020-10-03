@@ -3,7 +3,9 @@
 ===========================================*/
 import React from 'react';
 
-const CocktailList = () => {
+const CocktailList = ({cocktails, loading}) => {
+
+
    return (
       <div>
          <h1>components/CocktailList.js</h1>

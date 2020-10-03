@@ -3,7 +3,7 @@
 ===========================================*/
 import React from 'react';
 
-const SearchForm = () => {
+const SearchForm = ({setSearchTerm}) => {
    return (
       <div>
          <h1>components/SearchForm.js</h1>
