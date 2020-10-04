@@ -9,7 +9,7 @@ import SearchForm from '../components/SearchForm';
 const Home = () => {
 	//**************** Hook useState ****************//
 	const [loading, setLoading] = useState(false);
-	const [searchTerm, setSearchTerm] = useState('ab');
+	const [searchTerm, setSearchTerm] = useState('a');
 	const [cocktails, setCocktails] = useState([]);
 
    //**************** Hook useEffect ****************//
@@ -62,11 +62,10 @@ const Home = () => {
 	}, [searchTerm]);
 
 
-
 	return (
 		<main>
 			<SearchForm setSearchTerm={setSearchTerm} />
-			<CocktailList loading={loading} cocktails={setCocktails} />
+			<CocktailList loading={loading} cocktails={cocktails} />
 		</main>
 	);
 }
