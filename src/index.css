@@ -52,6 +52,7 @@ body {
   line-height: 1.4;
   font-size: 1rem;
   font-weight: 300;
+  overflow: hidden;
 }
 
 h1,
@@ -401,3 +402,7 @@ Cocktail
 }
 
 
+/*======Loader=====*/
+.loader-center {
+  margin: 2em auto;
+}

@@ -2,6 +2,7 @@
             pages/Home.js
 ===========================================*/
 import React, {useState, useEffect} from 'react';
+import Loader from '../components/Loader'
 import CocktailList from '../components/CocktailList';
 import SearchForm from '../components/SearchForm';
 
@@ -9,7 +10,7 @@ import SearchForm from '../components/SearchForm';
 const Home = () => {
 	//**************** Hook useState ****************//
 	const [loading, setLoading] = useState(false);
-	const [searchTerm, setSearchTerm] = useState('a');
+	const [searchTerm, setSearchTerm] = useState('');
 	const [cocktails, setCocktails] = useState([]);
 
    //**************** Hook useEffect ****************//
