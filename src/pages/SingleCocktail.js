@@ -3,6 +3,7 @@
 ===========================================*/
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import Loader from '../components/Loader';
 
 const SingleCocktail = () => {
 	const { id } = useParams();
@@ -73,7 +74,18 @@ const SingleCocktail = () => {
    }, [id]);
    
    if (loading) {
-      return <h2 className='section-title'>Loading...</h2>;
+      return (
+			<section>
+				{/* <h2 className='section-title'>
+					loading...
+				</h2> */}
+				<Loader
+					type='spinningBubbles'
+					color='#476A2E'
+					className='loader-center'
+				/>
+			</section>
+		);
 
    }
    if (!cocktail) {
